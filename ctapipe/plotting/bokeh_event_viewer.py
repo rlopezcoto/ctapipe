@@ -41,7 +41,7 @@ class BokehEventViewerCamera(CameraDisplay):
 
     def _reset(self):
         self.reset_pixels()
-        self.event_viewer.change_time(0)
+        self.event_viewer.change_time(25)
 
     def _set_image(self):
         e = self.event
