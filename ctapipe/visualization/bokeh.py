@@ -359,7 +359,8 @@ class WaveformDisplay:
         self._active_time = val
 
     def _draw_waveform(self):
-        self.fig.line(x="t", y="samples", source=self.cdsource, name='line')
+        #self.fig.line(x="t", y="samples", source=self.cdsource, name='line')
+        self.fig.vbar(x="t", top="samples", width=1.0, source=self.cdsource, name='line')
 
     def enable_time_picker(self):
         """
